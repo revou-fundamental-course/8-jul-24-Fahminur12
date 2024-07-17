@@ -150,6 +150,7 @@ h1 {
     transition: 0.1s ease;
     z-index: 1111;
     display: flex;
+
   }
 
   .labeline {
@@ -299,4 +300,67 @@ h1 {
 
 #downloadbtn:hover {
     background-color: #1b1c1c;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .input-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+  
+    .submitbtn,
+    .resetbtn {
+        max-width: 100%;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .header-text1,
+    .header-text2 {
+        font-size: 24px;
+    }
+
+    .input-container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .input5 {
+        width: calc(100% - 40px);
+    }
+
+    .labeline {
+        padding: 0 15px;
+        margin: 0 10px;
+    }
+
+    .submitbtn,
+    .resetbtn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text1,
+    .header-text2 {
+        font-size: 20px;
+    }
+
+    .input5 {
+        width: calc(100% - 10px);
+    }
 }
